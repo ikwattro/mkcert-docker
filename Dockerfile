@@ -14,4 +14,4 @@ WORKDIR /root/.local/share/mkcert
 
 
 
-CMD mkcert -install && for i in $(echo $domain | sed "s/,/ /g"); do mkcert $i; done && tail -f -n0 /etc/hosts
+CMD mkcert -install && for i in $(echo $domain | sed "s/,/ /g"); do mkcert $i; done

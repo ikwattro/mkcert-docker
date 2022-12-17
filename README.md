@@ -15,7 +15,7 @@ Assuming you want to create a certificate for `develop.localhost.com`
 Run the container
 
 ```bash
-docker run --rm -d -e domain=develop.localhost.com --name mkcert -v $PWD:/root/.local/share/mkcert ikwattro/mkcert-docker
+docker run --rm -it -e domain=develop.localhost.com --name mkcert -v $PWD:/root/.local/share/mkcert ikwattro/mkcert-docker
 ```
 
 Install the certificate to your OS trustore ( OS X )
