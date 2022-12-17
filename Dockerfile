@@ -7,8 +7,6 @@ RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
 
 RUN cd /go && go install filippo.io/mkcert@latest
 RUN ls -lha
-# RUN cd filippo.io/mkcert && \
-#     go build -o /bin/mkcert
 
 WORKDIR /root/.local/share/mkcert
 
